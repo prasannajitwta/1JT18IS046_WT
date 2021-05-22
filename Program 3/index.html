@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>challenge-3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 18px;
+    }
+
+    header {
+      margin: 0;
+    }
+    .main {
+      position: relative;
+      margin-left: 1%;
+    }
+
+    .main img {
+      margin-left: 1%;
+      height: 300px;
+      width: auto;
+    }
+  #demo {
+position: absolute;
+  margin-left:70%;
+padding-bottom:250px;
+  transform: translate(-50%, -50%);
+  }
+
+    
+    
+    .checked {
+  color: orange;
+}
+
+  </style>
+</head>
+
+<body>  <header>
+    <a href="#home">Home</a> |
+    <a href="#places">Places</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#search">Search</a> |
+    <a href="#aboutus">AboutUs</a>|
+   
+  </header>
+  <br>
+  <section class="main">
+    <h1>
+      <B>Jyothy Institute of Technology</B>
+    </h1>
+    <br><br>
+    <img src="https://jyothyit.ac.in/wp-content/uploads/2019/11/1.jpg" alt="JIT">
+    
+<p id="demo"></p>
+
+    <br>
+    <p>by <U><a href="#">1JT18IS046 - PRASANNA.R</a></U> </p>
+    <br>
+    <p>
+        Jyothy Institute of Technology under the governance of Jyothy Charitable Trust which is headquartered at Bengaluru mainly focuses on delivering quality education that equips students for life and career. We offer Undergraduate, Postgraduate and Research Programmes in various disciplines. Focused teaching facilities coupled with practical and forward-thinking programmes lend a hand to students throughout their academic period. A significant amount of emphasis is given for extracurricular activities through various clubs, technical chapters, sports, and cultural activities.
+    </p>
+    <br>
+    <p><i>Year</i> : 2021</p>
+    <p><i>Date</i> : 19th May </p>
+    <br>
+    <br>
+    <h2>Reviews</h2>
+    <br>
+    <p style="font-weight:bold; font-size:20px"> Amazing </p>
+    <table>
+      <tr>
+        <td> RASHMI  </td>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <td>
+    
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span></td></td>
+      </tr>
+    </table><br>
+    <p>Best college in Bangalore south. Friendly lectures. Environment is so good with full of trees. </p>
+    <br>
+    <hr>
+    <br>
+
+    <p style="font-weight:bold; font-size:20px">Too Outskirts </p>
+    <table>
+      <tr>
+        <td> PRAVEEN </td>
+        <td><span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star">  </td>
+      </tr>
+    </table><br>
+    <p> Situated at the outskirts,Its away from city.</p>
+    <br>
+    <hr><br>
+
+    <p style="font-weight:bold; font-size:20px">Very Happy</p>
+    <table>
+      <tr>
+        <td> YUVA KUMMAR </td>
+        <td>
+            
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span></td>
+      </tr>
+    </table>  
+    <br>
+    <p>The faculty, placements, and crowd in Jyothy Institute of Technology are good. </p>
+  </section>
+
+  <br>
+  <section class="ending">
+    <a href="#home">Home</a> |
+    <a href="#places">Places</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#search">Search</a> |
+    <a href="#aboutus">AboutUs</a> |
+    
+  </section>
+
+  <footer>
+    <p>&nbsp;</p>
+    <p style="color:rgb(85, 83, 83)"><i>
+    
+
+    Copyright &#169 2021 Jyothy Institute of Technology
+
+</i></p>
+  </footer>
+  <script>
+var var1 = setInterval(inTimer, 500);
+var fs = 5; //font size
+var ids = document.getElementById("demo");
+function inTimer()
+{
+ids.innerHTML = 'Jyothy Institute of Technology';
+ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+fs += 5;
+if (fs >= 50)
+{
+clearInterval(var1); //paused
+var2 = setInterval(deTimer, 500);
+
+}
+}
+function deTimer() //fs = 50px
+{
+fs -= 5;
+ids.innerHTML = 'JIT';
+ids.setAttribute('style', "font-size: " + fs + "px; color:blue");
+if (fs == 15)
+{
+clearInterval(var2); //paused
+var1 = setInterval(inTimer, 500);
+}
+}
+</script>
+</body>
+
+</html>
