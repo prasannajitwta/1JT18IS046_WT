@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  margin: 0;
+}
+.main {
+  position: relative;
+  margin-left: 1%;
+}
+
+.main img {
+  margin-left: 1%;
+  height: 300px;
+  width: auto;
+}
+#demo {
+  position: absolute;
+  margin-left: 70%;
+  padding-bottom: 250px;
+  transform: translate(-50%, -50%);
+}
+
+.checked {
+  color: orange;
+}
